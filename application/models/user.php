@@ -13,8 +13,8 @@ class User extends ExposedModel {
         $result['userid'] = $this->newEntry ($params, $req);
         return $result;
     }
-    public function getUser($params) {
-        $req = array('userid');       
-        return $this->getEntries($params, $req);
+    public function getRoommates($params) {
+        $req = ['userid','budget','lat','lon'];
+        // first look for people with +-2000 rupees budget
     }
 }
