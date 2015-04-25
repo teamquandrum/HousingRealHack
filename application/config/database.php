@@ -64,9 +64,9 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-$db['test']['hostname'] = 'localhost';
-$db['test']['username'] = 'root';
-$db['test']['password'] = 'root';
+$db['test']['hostname'] = 'mysql1.gear.host';
+$db['test']['username'] = 'quandrum';
+$db['test']['password'] = 'rootadmin!';
 $db['test']['database'] = 'housing';
 $db['test']['dbdriver'] = 'mysql';
 $db['test']['dbprefix'] = '';
