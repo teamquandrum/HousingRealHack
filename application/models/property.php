@@ -21,7 +21,9 @@ class Property extends ExposedModel {
     
     private function getCentroid($params) {
         $req = ['lats','lons'];
-        $area = 0;
-        
+        $this->throwExceptionOnUnset($params, $req);
+        $params['lats'][count(lats)]=$params['lats'][0];
+        $params['lons'][count(lons)]=$params['lons'][0];
+        return $params;
     }
 }
