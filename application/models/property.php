@@ -24,8 +24,8 @@ class Property extends ExposedModel {
         $this->throwExceptionOnUnset($params, $req);
         $params['lats'] = explode(":", $params['lats']);
         $params['lons'] = explode(":", $params['lons']);
-        $params['lats'][count('lats')]=$params['lats'][0];
-        $params['lons'][count('lons')]=$params['lons'][0];
+        $params['lats'][count($params['lats'])]=$params['lats'][0];
+        $params['lons'][count($params['lons'])]=$params['lons'][0];
         return $params; 
     }
 }
