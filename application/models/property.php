@@ -19,11 +19,11 @@ class Property extends ExposedModel {
         return $this->getEntries($params,[]);
     }
     
-    private function getCentroid($params) {
+    public function getCentroid($params) {
         $req = ['lats','lons'];
         $this->throwExceptionOnUnset($params, $req);
         $params['lats'][count(lats)]=$params['lats'][0];
         $params['lons'][count(lons)]=$params['lons'][0];
-        return $params;
+        return $params; 
     }
 }
