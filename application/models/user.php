@@ -8,10 +8,7 @@ class User extends ExposedModel {
         return 'user';
     }
     public function newUser($params) {
-        $req = array("name","model","gcmregid");
-        
-        $existingUsers = $this->getEntries ($params, array('gcmregid'));
-        if(count($existingUsers)!=0) return $existingUsers[0];
+        $req = array("name","gender", "openness","conscience","extroverted","agreeable","neurotic");
         
         $result['userid'] = $this->newEntry ($params, $req);
         return $result;

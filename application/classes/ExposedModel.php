@@ -39,6 +39,7 @@ abstract class ExposedModel extends CI_Model {
     /**
      * Expects array params which can be directly insert into table
      * @param associative array $params 
+     * @return id of last inserted row
      */
     public function newEntry($params, $req) {
         $this->throwExceptionOnUnset($params, $req);        
