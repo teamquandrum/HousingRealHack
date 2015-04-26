@@ -16,7 +16,14 @@ class Property extends ExposedModel {
     public function getProperty($params) {
         $req = ['userid'];
         // draw polygon, get centroid
-        return $this->getEntries($params,[]);
+        $centroid = $this->getCentroid($params);
+        $lat = $centroid[0];
+        $lon = $centroid[1];
+        $query = "SELECT * FROM property WHERE propid in "
+                . "( SELECT propid from property where ( 6371 * acos( cos( radians($lat) ) * cos( radians( lat ) ) 
+* cos( radians( lon ) - radians($lon) ) + sin( radians($lat) ) * sin(radians(lat)) ) ) <10)";
+        
+        return $this->db->query($query)->result_array();
     }
     
     public function getCentroid($params) {
@@ -38,13 +45,18 @@ class Property extends ExposedModel {
             $y+=($yi+$yi1)*($xi*$yi1 - $xi1*$yi);
         }
         $area/=2;
-        echo $area;
         if($area==0) {
-           echo $x;
-           echo $y;
+           $x = $params['lats'][0]+$params['lats'][1];
+           $y = $params['lons'][0]+$params['lons'][1];
+           $x/=2;
+           $y/=2;
         } else {
             $x = $x/6/$area;
             $y = $y/6/$area;
+        }
+        if($x<0) {
+            $x = -$x;
+            $y = -$y;
         }
         return [$x,$y]; 
     }
