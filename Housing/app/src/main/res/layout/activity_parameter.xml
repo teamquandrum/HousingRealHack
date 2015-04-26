@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aman.housing.Parameter">
+
+    <TextView
+        android:id="@+id/textdaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select places that you visit daily"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/bottomButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="contactHome"
+        android:text="Find me my dream house!" />
+
+    <EditText
+        android:id="@+id/budgetBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomButton"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/budgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/budgetBox"
+        android:text="Enter your budget"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/listAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/budgetText"
+        android:layout_centerHorizontal="true"
+        android:onClick="addListItem"
+        android:text="Add a location" />
+
+    <ListView
+        android:id="@+id/completeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listAddButton"
+        android:layout_below="@id/textdaily"></ListView>
+
+</RelativeLayout>

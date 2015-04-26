@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aman.housing.Display">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        android:text="Property Details"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Details"
+        android:id="@+id/fillDetails"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Available Videos"
+        android:textColor="@android:color/black"
+        android:id="@+id/videos"
+        android:textSize="35sp"
+        android:layout_below="@+id/fillDetails" />
+
+    <TextView
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Videos"
+        android:id="@+id/videoLinks"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_below="@+id/videos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Suggested Roommates/Flatmates"
+        android:textColor="@android:color/black"
+        android:id="@+id/room"
+        android:textSize="35sp"
+        android:layout_below="@+id/videoLinks" />
+
+    <TextView
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested roommates"
+        android:id="@+id/mates"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:layout_below="@+id/room" />
+
+</RelativeLayout>
