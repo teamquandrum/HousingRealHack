@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Girish\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-e4cab1c74faa31c282f2b875d0c529135170813c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\classes-07cd1c621d91f6dbf61e1634410202d3c327e332.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\classes-4123b4548227961e89186467d2143c680acda00d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\libs\android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-d650f37f1d914a68a268eda75a7a5da844155f3f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-4a9b9a47f1e71517c84ee3e9ce6281f9b74dc82e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\classes-1560f4d331ffebbded084c773dd0f7565b686ed3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f254ec13d6671680482d2218f01ecf14dfa93e6">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\classes-cfb116d01b2fec816b81cfc1532de4c98bbe1472.jar" />
+    </item>
+    <item
+        jar="F:\Android Studio\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Girish\AndroidStudioProjects\HousingSample\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-b28865cc79de774c4df26b0ae6fe00def18bdcf7.jar" />
+    </item>
+
+</items>

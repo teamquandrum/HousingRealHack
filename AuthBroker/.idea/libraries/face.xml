@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="face">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/src/main/libs/face.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
