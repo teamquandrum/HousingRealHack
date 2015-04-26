@@ -19,7 +19,13 @@ class User extends ExposedModel {
         $user = $this->getEntries($params, ['userid']);
         $budget = $params['budget'];
         // first look for people with +-2000 rupees budget
-        $query = "Select *, -from user where budget > $budget-2000 AND budget < $budget + 2000";
+        $query = "Select *, "
+                . "POW({$user['openness']}-openness,2)"
+                . "POW({$user['openness']}-openness,2)"
+                . "POW({$user['openness']}-openness,2)"
+                . "POW({$user['openness']}-openness,2)"
+                . "POW({$user['openness']}-openness,2)"
+                . "from user where budget > $budget-2000 AND budget < $budget + 2000";
         return $this->db->query($query)->result_array();
     }
 }

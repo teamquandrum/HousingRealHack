@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 26, 2015 at 02:02 AM
+-- Generation Time: Apr 26, 2015 at 09:31 AM
 -- Server version: 5.5.43-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.9
 
@@ -51,15 +51,16 @@ CREATE TABLE IF NOT EXISTS `property` (
   `description` text NOT NULL,
   `address` text NOT NULL,
   PRIMARY KEY (`propid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `property`
 --
 
 INSERT INTO `property` (`propid`, `ownerid`, `price`, `bhk`, `lat`, `lon`, `numppl`, `rentable`, `description`, `address`) VALUES
-(4, 1, 10000, 3, 23.0000000, 77.0000000, 4, 0, 'PH: +9190362610', 'Opp. Shriram apts., S S A Road, Hebbal, Bangalore, Karnataka.'),
-(5, 1, 5000, 2, 24.0000000, 76.0000000, 4, 0, 'PG to-let.\r\n\r\nPH: +9181475654', 'Shivananda Circle, Race Course Road, Bangalore, Karnataka.');
+(4, 1, 10000, 3, 23.0000000, 77.0000000, 4, 0, '3 BHK Independent House.\r\nPH: +9190362610', 'Opp. Shriram apts., S S A Road, Hebbal, Bangalore, Karnataka.'),
+(5, 1, 5000, 2, 24.0000000, 76.0000000, 4, 0, '100 Acre Land.\r\n\r\nPH: +9181475654', 'Shivananda Circle, Race Course Road, Bangalore, Karnataka.'),
+(6, 1, 30000, 2, 12.9784390, 77.5789620, 3, 1, '2BHK Apartment.', '138, 5th Cross Rd, Gandhi Nagar, Bengaluru, Karnataka.');
 
 -- --------------------------------------------------------
 
@@ -99,16 +100,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   `agreeable` int(11) NOT NULL,
   `neurotic` int(11) NOT NULL,
   `gender` varchar(10) NOT NULL,
+  `budget` int(11) NOT NULL,
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`userid`, `name`, `openness`, `conscience`, `extroverted`, `agreeable`, `neurotic`, `gender`) VALUES
-(1, 'John', 1, 1, 2, 2, 5, 'M'),
-(2, 'John', 1, 1, 2, 2, 5, 'M');
+INSERT INTO `user` (`userid`, `name`, `openness`, `conscience`, `extroverted`, `agreeable`, `neurotic`, `gender`, `budget`) VALUES
+(1, 'John', 1, 1, 2, 2, 5, 'M', 0),
+(2, 'John', 1, 1, 2, 2, 5, 'M', 0),
+(3, 'John', 1, 1, 2, 2, 5, 'M', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

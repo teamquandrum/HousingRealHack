@@ -12,7 +12,9 @@ class Property extends ExposedModel {
         $req = ['ownerid','price','bhk','lat','lon','numppl','rentable','description','address'];
         return $this->newEntry($params,$req);
     }
-    
+    public function getAllProperty($params) {
+        return $this->getEntries($params, []);
+    }
     public function getProperty($params) {
         $req = ['userid'];
         // draw polygon, get centroid
